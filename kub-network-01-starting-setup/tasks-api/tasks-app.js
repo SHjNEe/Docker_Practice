@@ -42,6 +42,7 @@ app.get('/tasks', async (req, res) => {
   }
 });
 
+
 app.post('/tasks', async (req, res) => {
   try {
     const uid = await extractAndVerifyToken(req.headers); // we don't really need the uid
